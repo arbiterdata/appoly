@@ -50,10 +50,12 @@
             <p>No data<p>
             @endforelse
         </div>
-        
 
+        <form action="/cron">
+            @csrf 
+            <input type="submit" value="Cron"></input>
+        </form>
     </body>
-
     <script>
     </script>
 </html>

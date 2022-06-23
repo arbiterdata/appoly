@@ -21,3 +21,4 @@ Route::get('/item/delete/{item}',[ItemController::class, 'destroy']);
 Route::post('/item/store',[ItemController::class, 'store']);
 Route::post('/child/store',[ChildController::class, 'store']);
 Route::get('/child/delete/{child}',[ChildController::class, 'destroy']);
+Route::get('/cron', [ItemController::class, 'update']);
